@@ -14,13 +14,13 @@ We envision a relationship between our models as follows:
 
 Blogger -< Post >- Destination
 
-
 For each model, we have a specific vision in mind:
 
 Blogger:
 
 1. Users should be able to create a new blogger
  	- Bloggers should have unique names and ages above 0, and their bio should be over 30 characters long.
+
 2. Users should be able to see the profile page of a blogger. On this page, a user should see:
 	- The total likes on all of that blogger's posts
 	- A link to that blogger's featured post (the post with the most likes)
@@ -40,7 +40,12 @@ Post:
 	- Users should be able to select a destination from a dropdown menu
 	- A post should have a title
 	- A post should have content longer than 100 characters
+
 2. Users should be able to see a post's page with its title and content displayed. On this page, a user should see:
 	- A link to the page of that post's author
 	- A link to the page of that post's destination
 	- A like button link that increases the like count for that post (should take the user to the same page)
+
+	  - `#like` action on the post controller
+		- `button_to` method in the view
+		- update the routes with the like action
